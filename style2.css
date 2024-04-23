@@ -1,0 +1,222 @@
+body {
+  overflow-x: hidden;
+}
+
+.header #navbar {
+  display: none;
+}
+
+nav#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+nav#navbar ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav#navbar h4 {
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 2.5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+nav#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+nav#navbar ul li a:hover {
+  color: #777;
+}
+
+/* Hamburger Menu */
+.menu-togle {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-togle input {
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  left: -7px;
+  top: -2px;
+  opacity: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.menu-togle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+/* Form */
+/* contact */
+
+.contact {
+  margin-top: 30px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+.contact .contact-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contact .contact-box .right-contact {
+  width: 50%;
+}
+
+.right-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.right-contact form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.right-contact form .form-group input {
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #fff;
+  outline: #424aff;
+  border: 2px solid #424aff;
+  border-radius: 5px;
+  color: black;
+}
+
+.right-contact form .form-group textarea {
+  width: 92%;
+  padding: 10px;
+  font-size: 15;
+  background-color: #fff;
+  border: 2px solid #424aff;
+  border-radius: 5px;
+}
+
+.right-contact form button {
+  width: 85px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #424aff;
+  color: #03001c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-message {
+  color: white;
+  padding: 6px 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(221, 141, 154, 0.5);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* hamburger animation */
+.menu-togle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-togle span:nth-child(4) {
+  transform-origin: 0 0;
+}
+
+.menu-togle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-togle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-2px, -1px);
+}
+
+.menu-togle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* responsive break point */
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav#navbar ul {
+    width: 50%;
+  }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 578px) {
+  .header header {
+    display: none;
+  }
+  .header #navbar {
+    width: 100%;
+    display: flex;
+  }
+
+  .menu-togle {
+    display: flex;
+  }
+
+  nav#navbar ul {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #121212;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 0.85s;
+    opacity: 0;
+  }
+
+  nav#navbar ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+.header {
+  background-color: #121212;
+  padding: 70px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  height: 90vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+header .link {
+  display: flex;
+  gap: 20px;
+}
+
+header .link .login {
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+header .link .trial .start {
+  text-decoration: none;
+  color: white;
+}
+
+header .link .trial {
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.hero .left-hero {
+  color: white;
+  position: absolute;
+  top: 130px;
+}
+
+.hero .left-hero h2 {
+  font-size: 58px;
+}
+
+.hero .left-hero p {
+  margin: 20px 0;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.hero .left-hero a {
+  padding: 10px 40px;
+  background-image: linear-gradient(to right, #5e88f3, #671ae4);
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+
+.hero .hero-tengah {
+  position: absolute;
+  left: 500px;
+  top: 50%;
+  z-index: 1;
+}
+
+.hero .right-hero {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+}
+
+.hero .right-hero .foto img {
+  width: 300px;
+}
+
+.informasi {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.informasi .informasi-kiri {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.informasi .informasi-kiri h2 {
+  font-size: 40px;
+}
+
+.informasi .informasi-kiri p {
+  font-size: 20px;
+}
+
+.informasi .informasi-kiri .informasi-id {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.informasi .informasi-kiri .informasi-id .informasi-foto img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.informasi .informasi-kiri .informasi-id .informasi-nama h2 {
+  font-size: 18px;
+}
+
+.informasi .informasi-kiri .informasi-id .informasi-nama p {
+  font-size: 14px;
+}
+
+.informasi .informasi-kiri .persen {
+  display: flex;
+  gap: 80px;
+}
+
+.informasi .informasi-kiri .persen p {
+  font-size: 16px;
+}
+
+.informasi .informasi-kanan {
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.informasi-kanan .informasi-card-1,
+.informasi-kanan .informasi-card-2,
+.informasi-kanan .informasi-card-3,
+.informasi-kanan .informasi-card-4 {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-top: 10px solid #1a52e4;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.informasi-kanan .informasi-card-2 {
+  border-top: 10px solid #4edd65;
+}
+
+.informasi-kanan .informasi-card-3 {
+  border-top: 10px solid #a636ff;
+}
+
+.informasi-kanan .informasi-card-4 {
+  border-top: 10px solid #d13d3d;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #333333;
+  padding: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer .footer-atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+footer .footer-atas h2 {
+  font-size: 40px;
+}
+
+footer .footer-atas .footer-link {
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-atas .footer-link .daftar {
+  padding: 10px 40px;
+  background-image: linear-gradient(to right, #5e88f3, #671ae4);
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+
+footer .footer-atas .footer-link .pelajari {
+  padding: 10px 40px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+
+footer .footer-bawah {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-bawah a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+}
+
+footer .footer-bawah .footer-1 {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+
+footer .footer-bawah .footer-1 p {
+  margin-top: 12px;
+}
+
+footer .footer-5 {
+  margin-top: 10px;
+}
+
+.elon {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 50px;
+}
+
+.elon h2 {
+  font-size: 40px;
+}
+
+.elon .foto-teks {
+  display: flex;
+  gap: 100px;
+}
+
+.elon .foto-teks .teks p {
+  font-size: 24px;
+}
+
+.elon .foto-teks .foto {
+  width: 310px;
+  height: 270px;
+  border: 1px solid black;
+}
+
+.elon .foto-teks .foto img {
+  width: 300px;
+}
+
+.elon .foto-teks .teks {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
